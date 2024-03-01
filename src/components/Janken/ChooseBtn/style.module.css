@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.container button {
+  font-size: 30px;
+  text-align: center;
+  background-color: #d1d5db;
+  border-bottom: 0.1875em solid #6b7280;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.2em 0.8em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.container button:hover {
+  border-bottom-color: transparent;
+  transform: translateY(0.1875em);
+}
+
+.container button:active {
+  opacity: 0.8;
+}

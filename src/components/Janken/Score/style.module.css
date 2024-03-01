@@ -1,0 +1,21 @@
+.score {
+  color: #e0f2fe;
+  width: 200px;
+  margin: 0 auto 20px;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number {
+  font-size: 40px;
+  font-weight: 600;
+}
+.hyphen {
+  font-size: 30px;
+}

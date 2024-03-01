@@ -1,0 +1,27 @@
+.label {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  text-align: left;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.label::after {
+  content: '';
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background-color: #082f49;
+  bottom: 10px;
+  left: 75px;
+}
+.result {
+  font-weight: 600;
+  margin-left: 15px;
+  color: #ef4444;
+}
