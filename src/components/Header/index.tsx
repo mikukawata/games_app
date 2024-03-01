@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './style.module.css';
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <nav className={styles.nav}>
       <Link href='/janken' className={styles.link}>

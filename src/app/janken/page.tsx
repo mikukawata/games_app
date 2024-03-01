@@ -5,6 +5,7 @@ import Score from '@/components/Janken/Score';
 import Result from '@/components/Janken/Result';
 import ChooseBtn from '@/components/Janken/ChooseBtn';
 import { NextPage } from 'next';
+import { SelectedChoises } from '@/components/Janken/SelectedChoises';
 
 const RockPaperScissors: NextPage = () => {
   // const choices = ['\u{270A}', '\u{270C}', '\u{1F590}'];
@@ -12,21 +13,10 @@ const RockPaperScissors: NextPage = () => {
 
   return (
     <div className={styles.game}>
-      <h1 className={styles.game__title}>じゃんけんゲーム</h1>
+      <h1 className={styles.title}>じゃんけんゲーム</h1>
 
       <Score />
-
-      <div className={styles.game__container}>
-        <div className={styles.game__item}>
-          <p className={styles.game__player}>あなた</p>
-          <div className={styles.game__choice}>&#9994;</div>
-        </div>
-        <div className={styles.game__item}>
-          <p className={styles.game__player}>コンピュータ</p>
-          <div className={styles.game__choice}>&#9994;</div>
-        </div>
-      </div>
-
+      <SelectedChoises />
       <ChooseBtn />
       <Result />
     </div>
