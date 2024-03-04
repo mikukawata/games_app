@@ -38,3 +38,8 @@
   background-color: #fff;
   color: #38bdf8;
 }
+
+.active {
+  background-color: #7dd3fc;
+  color: #fff;
+}
