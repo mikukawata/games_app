@@ -16,6 +16,8 @@ const Janken: NextPage = () => {
   const [yourChoiseIdx, setYourChoiseIdx] = useState<number | undefined>();
   const [comChoiseIdx, setComChoiseIdx] = useState<number | undefined>();
   const [result, setResult] = useState<number>(3);
+  const [active, setActive] = useState<boolean>(false);
+
   const resultMsg = ['あいこです。', '勝ちました 🎉', '負けました...', ''];
   const choices = [
     { value: 'rock', emoji: '✊' },
@@ -32,6 +34,11 @@ const Janken: NextPage = () => {
     setComChoiseIdx(randomIdx);
     const calcResult = (randomIdx - nextIdx + NUM_OF_CHOICES) % NUM_OF_CHOICES;
     setResult(calcResult);
+
+    setActive(true);
+    setTimeout(() => {
+      setActive(false);
+    }, 1000);
   };
 
   return (
@@ -40,8 +47,8 @@ const Janken: NextPage = () => {
 
       <Score />
       <div className={styles.container}>
-        <SelectedChoise user='あなた' choise={yourChoiseIdx ? choices[yourChoiseIdx].emoji : '✊'} />
-        <SelectedChoise user='コンピュータ' choise={comChoiseIdx ? choices[comChoiseIdx].emoji : '✊'} />
+        <SelectedChoise user='あなた' choise={yourChoiseIdx ? choices[yourChoiseIdx].emoji : '✊'} active={active} />
+        <SelectedChoise user='コンピュータ' choise={comChoiseIdx ? choices[comChoiseIdx].emoji : '✊'} active={active} />
       </div>
 
       <ChooseBtn playGame={playGame} />
