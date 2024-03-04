@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './style.module.css';
-const Result = () => {
+
+interface Props {
+  msg: string;
+}
+
+const Result: FC<Props> = ({ msg }) => {
   return (
     <p className={styles.label}>
-      結果:<span className={styles.result}></span>
+      結果:<span className={styles.result}>{msg}</span>
     </p>
   );
 };

@@ -8,3 +8,12 @@
 .title {
   margin-bottom: 50px;
 }
+
+.container {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
