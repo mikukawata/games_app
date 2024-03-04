@@ -1,9 +1,20 @@
 .main {
-  background-color: #082f49;
+  background-color: #fff;
+  padding: 4rem;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+  background: rgb(96, 165, 250);
+  background: linear-gradient(45deg, rgba(96, 165, 250, 1) 0%, rgba(56, 189, 248, 1) 35%, rgba(34, 211, 238, 1) 100%);
+}
+
+.title {
+  font-size: 50px;
+}
+
+.subtitle {
+  font-size: 20px;
 }
