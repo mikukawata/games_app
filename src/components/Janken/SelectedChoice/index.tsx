@@ -3,16 +3,16 @@ import styles from './style.module.css';
 
 interface Props {
   user: string;
-  choise: string;
+  choice: string;
   active: boolean;
 }
 
-export const SelectedChoise: FC<Props> = ({ user, choise, active }) => {
+export const SelectedChoice: FC<Props> = ({ user, choice, active }) => {
   return (
     <>
       <div className={`${styles.item} ${active ? styles.active : styles.inactive}`}>
         <p className={styles.player}>{user}</p>
-        <div className={styles.choice}>{choise}</div>
+        <div className={styles.choice}>{choice}</div>
       </div>
     </>
   );
